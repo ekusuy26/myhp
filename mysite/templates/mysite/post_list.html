@@ -1,0 +1,85 @@
+{% load static %}
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/mysite.css' %}">
+    <title>個人アプリ</title>
+  </head>
+  <body>
+    <header>へっだ
+      <div class="user">ユーザー情報</div>
+    </header>
+      <div class ="contents">
+        <div class ="side">投稿された画像
+          <div class ="photo-box">
+            <div class ="photo">しゃしん</div>
+            <div class ="photo">しゃしん</div>
+            <div class ="photo">しゃしん</div>
+            <div class ="photo">しゃしん</div>
+          </div>
+          <div class ="photo-box">
+            <div class ="photo">しゃしん</div>
+            <div class ="photo">しゃしん</div>
+            <div class ="photo">しゃしん</div>
+            <div class ="photo">しゃしん</div>
+          </div>
+          <div class ="photo-box">
+            <div class ="photo">しゃしん</div>
+            <div class ="photo">しゃしん</div>
+            <div class ="photo">しゃしん</div>
+            <div class ="photo">しゃしん</div>
+          </div>
+          <div class ="photo-box">
+            <div class ="photo">しゃしん</div>
+            <div class ="photo">しゃしん</div>
+            <div class ="photo">しゃしん</div>
+            <div class ="photo">しゃしん</div>
+          </div>
+        </div>
+        <div class ="main">画像合成フォーム
+          <div class ="upper-box">
+            <div class ="parents">image1</div>
+            <div class ="parents">image2</div>
+          </div>
+          <div class ="under-box">image3</div>
+        </div>
+        <div class ="messages">チャットフォーム
+          <div class ="group">グループ情報</div>
+          <div class ="message">
+            <div class="their_message">相手のメッセージ</div>
+            <div class="my_message">自分のメッセージ</div>
+          </div>
+          <div class ="form"></div>
+        </div>
+      </div>
+  </body>
+</html>
+
+
+
+<!-- {% load static %}
+これでcssを読み込め、という命令。staticフォルダのcss内のcssを読め
+
+<html>
+    <head>
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+      <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+      ここで具体的にcssを指定
+        <title>Django Girls blog</title>
+    </head>
+    <body>
+      <div>
+        <h1><a href="/">Django Girls Blog</a></h1>
+    </div>
+    {% for post in posts %}
+        <div>
+            <p>published: {{ post.published_date }}</p>
+            <h2><a href="">{{ post.title }}</a></h2>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+    </body>
+</html> -->
