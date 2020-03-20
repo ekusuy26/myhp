@@ -18,3 +18,4 @@ class Logout(LoginRequiredMixin, LogoutView):
 class Logout(LoginRequiredMixin, LogoutView):
     """ログアウトページ"""
     template_name = 'accounts/login.html'
+    
