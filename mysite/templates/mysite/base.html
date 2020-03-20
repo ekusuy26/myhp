@@ -1,0 +1,37 @@
+{% load static %}
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/mysite.css' %}">
+    <title>個人アプリ</title>
+  </head>
+  <body>
+    <header>へっだ
+      <ul class="user">
+        {% if user.is_authenticated %}
+        <li>
+          <a class="nav-link">ユーザ名：{{ user.get_username }}</a>
+        </li>
+        <li>
+          <a class="nav-link" href="{% url 'accounts:logout' %}">
+              <i class="fa fa-fw fa-sign-out"></i>ログアウト</a>
+        </li>
+        {% endif %}
+      </ul>
+    </header>
+      <div class ="contents">
+        <div class ="side">投稿された画像
+          <div class ="photo-box">
+            <div class ="photo">しゃしん</div>
+            <div class ="photo">しゃしん</div>
+            <div class ="photo">しゃしん</div>
+            <div class ="photo">しゃしん</div>
+          </div>
+        </div>
+        {% block content %}
+        <!-- content -->
+        {% endblock %}
+      </div>
+  </body>
+</html>
